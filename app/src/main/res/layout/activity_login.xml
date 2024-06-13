@@ -11,19 +11,19 @@
     <ImageView
         android:id="@+id/backgroundImageView"
         android:layout_width="match_parent"
-        android:layout_height="270dp"
+        android:layout_height="223dp"
         android:scaleType="fitXY"
         android:src="@drawable/background_gradient" />
 
     <!-- Logo -->
     <ImageView
         android:id="@+id/logoImageView"
-        android:layout_width="200dp"
-        android:layout_height="250dp"
-        android:src="@drawable/logo"
-        android:contentDescription="@string/app_name"
+        android:layout_width="204dp"
+        android:layout_height="199dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/logo" />
 
     <!-- ScrollView para o conteúdo rolável -->
     <ScrollView
@@ -44,7 +44,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="50dp"
+                android:layout_marginBottom="40dp"
                 android:text="Bem-vindo de volta!"
                 android:textSize="24sp"
                 android:textStyle="bold" />

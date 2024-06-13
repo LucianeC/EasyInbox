@@ -17,6 +17,6 @@ class SplashActivity : AppCompatActivity() {
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
             finish()
-        }, 5000) // 5000 milissegundos = 5 segundos
+        }, 4000) // 4000 milissegundos = 4 segundos
     }
 }

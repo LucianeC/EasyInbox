@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?android:attr/windowBackground"
+    android:padding="16dp"
+    tools:context=".InboxActivity">
+
+    <!-- SearchView for searching emails -->
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/searchview_background"
+        android:iconifiedByDefault="false"
+        android:queryHint="Pesquisar no EasyInbox">
+
+    </SearchView>
+
+    <!-- RecyclerView for displaying emails -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/emailRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp" />
+
+    <!-- Button to compose new email -->
+    <Button
+        android:id="@+id/composeEmailButton"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="16dp"
+        android:background="@color/button"
+        android:text="Escrever"
+        android:textColor="#FFFFFF" />
+</LinearLayout>
+
