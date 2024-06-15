@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
-    <!-- Fundo branco -->
 
     <!-- Gradiente de fundo -->
     <ImageView
@@ -22,7 +21,6 @@
         android:layout_height="199dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
-        android:contentDescription="@string/app_name"
         android:src="@drawable/logo" />
 
     <!-- ScrollView para o conteúdo rolável -->

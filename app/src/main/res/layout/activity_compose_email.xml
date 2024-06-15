@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ComposeEmailActivity">
+
+    <!-- Back button -->
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="37dp"
+        android:layout_height="42dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/caret_left" />
+
+    <!-- Send button -->
+    <ImageView
+        android:id="@+id/sendButton"
+        android:layout_width="55dp"
+        android:layout_height="34dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/paper_plane" />
+
+    <!-- "Para" field -->
+    <EditText
+        android:id="@+id/toEditText"
+        android:layout_width="375dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/backButton"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/border"
+        android:hint="  Para" />
+
+    <!-- "Categoria" field -->
+    <Spinner
+        android:id="@+id/categorySpinner"
+        android:layout_width="375dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/toEditText"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/border" />
+
+    <!-- "Escrever E-mail" field -->
+    <EditText
+        android:id="@+id/emailContentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/categorySpinner"
+        android:layout_margin="16dp"
+        android:hint="   Escrever E-mail"
+        android:background="@drawable/border"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:minLines="10" />
+
+    <!-- "Data do evento" field -->
+    <EditText
+        android:id="@+id/eventDateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailContentEditText"
+        android:layout_margin="16dp"
+        android:hint="   Data do evento"
+        android:background="@drawable/border"
+        android:focusable="false"
+        android:clickable="true" />
+
+</RelativeLayout>

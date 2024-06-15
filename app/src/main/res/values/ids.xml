@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="timeTextView" type="id" />
+    <item name="bookmarkImageView" type="id" />
+    <item name="emailSenderDetailTextView" type="id" />
+    <item name="emailDetailTextView" type="id" />
+    <item name="emailCategoryDetailTextView" type="id" />
+    <item name="emailDateDetailTextView" type="id" />
+    <item name="emailBodyTextView" type="id" />
+    <item name="emailEventDateTextView" type="id" />
+    <item name="emailSenderTextView" type="id" />
+    <item name="emailCategoryTextView" type="id" />
+    <item name="emailMessagePreviewTextView" type="id" />
+    <item name="emailTimeTextView" type="id" />
+</resources>

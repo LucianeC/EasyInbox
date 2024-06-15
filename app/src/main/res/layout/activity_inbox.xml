@@ -1,41 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="?android:attr/windowBackground"
-    android:padding="16dp"
-    tools:context=".InboxActivity">
+    android:padding="16dp">
 
-    <!-- SearchView for searching emails -->
-    <SearchView
+    <androidx.appcompat.widget.SearchView
         android:id="@+id/searchView"
         android:layout_width="378dp"
         android:layout_height="wrap_content"
         android:background="@drawable/searchview_background"
         android:iconifiedByDefault="false"
-        android:queryHint="Pesquisar no EasyInbox">
+        android:queryHint="Pesquisar no EasyInbox"/>
 
-    </SearchView>
 
-    <!-- RecyclerView for displaying emails -->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/emailRecyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:layout_marginTop="16dp" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/emailRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
 
-    <!-- Button to compose new email -->
-    <Button
-        android:id="@+id/composeEmailButton"
-        android:layout_width="170dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end"
-        android:layout_marginTop="16dp"
-        android:background="@color/button"
-        android:text="Escrever"
-        android:textColor="#FFFFFF" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/composeEmailButton"
+            android:layout_width="145dp"
+            android:layout_height="73dp"
+            android:layout_gravity="end"
+            android:background="@color/button"
+            android:text="Escrever"
+            android:textColor="#FFFFFF"/>
 </LinearLayout>
 
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:orientation="vertical"-->
+<!--    android:background="?android:attr/windowBackground"-->
+<!--    android:padding="16dp"-->
+<!--    tools:context=".InboxActivity">-->
+
+<!--    &lt;!&ndash; SearchView for searching emails &ndash;&gt;-->
+<!--    <SearchView-->
+<!--        android:id="@+id/searchView"-->
+<!--        android:layout_width="378dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@drawable/searchview_background"-->
+<!--        android:iconifiedByDefault="false"-->
+<!--        android:queryHint="Pesquisar no EasyInbox">-->
+
+<!--    </SearchView>-->
+
+<!--    &lt;!&ndash; RecyclerView for displaying emails &ndash;&gt;-->
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/emailRecyclerView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:layout_marginTop="16dp" />-->
+
+<!--    &lt;!&ndash; Button to compose new email &ndash;&gt;-->
+<!--    <Button-->
+<!--        android:id="@+id/composeEmailButton"-->
+<!--        android:layout_width="152dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="end"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:background="@color/button"-->
+<!--        android:drawableStart="@drawable/pencil"-->
+<!--        android:drawablePadding="8dp"-->
+<!--        android:text="Escrever"-->
+<!--        android:textColor="#FFFFFF" />-->
+<!--</LinearLayout>-->
+
+
+
+<!--    android:drawableStart="@drawable/pencil"-->
+<!--    android:drawablePadding="1dp"-->
