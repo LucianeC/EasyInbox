@@ -30,6 +30,11 @@ EasyInbox é um aplicativo Android desenvolvido em Kotlin para facilitar o geren
 - Kotlin
 - Android SDK
 - Material Design Components
-- Retrofit 
+- Retrofit
+
+  ## REPO DO BACK (API)
+  ````
+  https://github.com/LucianeC/emailapp/tree/master
+  ````
 
 Este projeto foi desenvolvido como parte do curso na **FIAP** com a iniciativa da **Locaweb** 
