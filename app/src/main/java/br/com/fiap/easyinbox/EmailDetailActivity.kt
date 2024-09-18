@@ -6,6 +6,7 @@ import android.os.Build
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import android.util.Log
+import br.com.fiap.easyinbox.network.RetrofitClient
 
 class EmailDetailActivity : AppCompatActivity() {
 
